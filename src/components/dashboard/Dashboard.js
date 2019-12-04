@@ -5,6 +5,7 @@ import { compose } from "redux";
 import { Redirect } from "react-router-dom";
 import Notifications from "./Notifications";
 import InterviewList from "../interviews/InterviewList";
+import CalendarComponent from "./Calendar";
 
 class Dashboard extends Component {
   render() {
@@ -19,6 +20,7 @@ class Dashboard extends Component {
           </div>
           <div className="col s12 m5 offset-m1">
             <Notifications notifications={notifications} />
+            <CalendarComponent />
           </div>
         </div>
       </div>
